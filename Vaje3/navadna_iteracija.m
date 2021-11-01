@@ -1,5 +1,4 @@
 function [x, X, k] = navadna_iteracija(f, pribl, eps, koraki)
-    
     X = pribl;
     for i = 2 : koraki + 1
         X(i) = f(X(i-1));
