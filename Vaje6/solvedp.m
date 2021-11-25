@@ -1,4 +1,4 @@
-function x = solve(A, b)
+function x = solvedp(A, b)
     n = length(b);
     [L, U, P] = ludp(A);
 
