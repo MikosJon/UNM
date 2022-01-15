@@ -1,0 +1,16 @@
+f = @(x) sin(x) .* cos(x);
+a = 0;
+b = 1;
+h = 0.5;
+
+% 1. del
+compositetrapezoidal(f, a, b, h)
+
+% 2. del
+abs(integral(f, a, b) - compositetrapezoidal(f, a, b, 0.125))
+
+% 3. del
+X = [1 h h/2 h/4];
+for 
+fX = compositetrapezoidal(f, 0, 1, )
+simpleinterpolate([1 0.25 0.00625 0.015625], )
